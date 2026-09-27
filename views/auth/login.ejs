@@ -1,0 +1,26 @@
+<%- include('../partials/head', { title, page: 'login' }) %>
+<main class="auth-shell">
+  <section class="auth-showcase d-none d-lg-flex">
+    <div class="showcase-content">
+      <span class="eyebrow"><i class="bi bi-lightning-charge-fill"></i> BUILT FOR MOMENTUM</span>
+      <h1>Every team deserves a calmer way to work.</h1>
+      <p>Plan, talk, and move projects forward in one focused workspace.</p>
+      <div class="showcase-orbit"><div class="orbit-card card-one"><i class="bi bi-check2-circle"></i> Release ready</div><div class="orbit-card card-two"><span class="presence-dot"></span> Team online</div><div class="orbit-card card-three"><i class="bi bi-chat-heart"></i> 24 new messages</div></div>
+    </div>
+  </section>
+  <section class="auth-panel">
+    <div class="auth-form-wrap">
+      <a class="brand-dark mb-5" href="/login"><span class="brand-mark"><i class="bi bi-people-fill"></i></span>TeamConnect</a>
+      <div class="mb-4"><p class="eyebrow text-primary mb-2">WELCOME BACK</p><h2>Sign in to your workspace</h2><p class="text-secondary mb-0">Continue where your team left off.</p></div>
+      <form id="loginForm" novalidate>
+        <div class="mb-3"><label class="form-label" for="email">Email address</label><input id="email" name="email" type="email" class="form-control form-control-lg" autocomplete="email" required placeholder="you@example.com"></div>
+        <div class="mb-3"><label class="form-label" for="password">Password</label><input id="password" name="password" type="password" class="form-control form-control-lg" autocomplete="current-password" required placeholder="••••••••"></div>
+        <div id="authError" class="alert alert-danger d-none small"></div>
+        <button class="btn btn-primary btn-lg w-100" type="submit">Sign in <i class="bi bi-arrow-right ms-1"></i></button>
+      </form>
+      <p class="text-center text-secondary mt-4 mb-0">New to TeamConnect? <a href="/register">Create an account</a></p>
+    </div>
+  </section>
+</main>
+<script src="/js/auth.js"></script>
+</body></html>

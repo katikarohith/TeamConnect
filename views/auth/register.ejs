@@ -1,0 +1,22 @@
+<%- include('../partials/head', { title, page: 'register' }) %>
+<main class="auth-shell">
+  <section class="auth-showcase d-none d-lg-flex">
+    <div class="showcase-content"><span class="eyebrow"><i class="bi bi-stars"></i> ONE PLACE, ONE PULSE</span><h1>Bring your team’s best work together.</h1><p>Create your workspace and make the next move feel obvious.</p><div class="showcase-orbit"><div class="orbit-card card-one"><i class="bi bi-kanban"></i> Clear priorities</div><div class="orbit-card card-two"><i class="bi bi-cpu"></i> AI task planner</div><div class="orbit-card card-three"><i class="bi bi-broadcast"></i> Live updates</div></div></div>
+  </section>
+  <section class="auth-panel">
+    <div class="auth-form-wrap">
+      <a class="brand-dark mb-4" href="/login"><span class="brand-mark"><i class="bi bi-people-fill"></i></span>TeamConnect</a>
+      <div class="mb-4"><p class="eyebrow text-primary mb-2">GET STARTED</p><h2>Create your account</h2><p class="text-secondary mb-0">Your first team is only a few clicks away.</p></div>
+      <form id="registerForm" novalidate>
+        <div class="mb-3"><label class="form-label" for="name">Your name</label><input id="name" name="name" type="text" class="form-control form-control-lg" autocomplete="name" required minlength="2" placeholder="Alex Morgan"></div>
+        <div class="mb-3"><label class="form-label" for="email">Email address</label><input id="email" name="email" type="email" class="form-control form-control-lg" autocomplete="email" required placeholder="you@example.com"></div>
+        <div class="mb-3"><label class="form-label" for="password">Password</label><input id="password" name="password" type="password" class="form-control form-control-lg" autocomplete="new-password" required minlength="8" placeholder="At least 8 characters"></div>
+        <div id="authError" class="alert alert-danger d-none small"></div>
+        <button class="btn btn-primary btn-lg w-100" type="submit">Create account <i class="bi bi-arrow-right ms-1"></i></button>
+      </form>
+      <p class="text-center text-secondary mt-4 mb-0">Already have an account? <a href="/login">Sign in</a></p>
+    </div>
+  </section>
+</main>
+<script src="/js/auth.js"></script>
+</body></html>

@@ -1,0 +1,9 @@
+<%- include('../partials/head', { title, page: 'dashboard' }) %>
+<%- include('../partials/nav') %>
+<main class="container py-4 py-lg-5">
+  <section class="page-hero d-flex flex-column flex-lg-row justify-content-between align-items-lg-end gap-3 mb-4"><div><p class="eyebrow text-primary mb-2">YOUR WORKSPACE</p><h1 id="welcomeHeading">Good to see you.</h1><p class="text-secondary mb-0">A clear view of what needs your attention.</p></div><a href="/teams" class="btn btn-primary"><i class="bi bi-plus-lg me-1"></i>Create or join a team</a></section>
+  <div class="row g-3 mb-5" id="dashboardMetrics"><div class="col-md-4"><div class="metric-card"><span>My teams</span><strong>—</strong></div></div><div class="col-md-4"><div class="metric-card"><span>Open tasks</span><strong>—</strong></div></div><div class="col-md-4"><div class="metric-card"><span>Due this week</span><strong>—</strong></div></div></div>
+  <div class="row g-4"><section class="col-lg-7"><div class="d-flex justify-content-between align-items-center mb-3"><h2 class="h4 mb-0">Your teams</h2><a href="/teams" class="small">View all</a></div><div id="teamPreview" class="row g-3"><div class="col-12"><div class="empty-state compact">Loading your teams…</div></div></div></section><section class="col-lg-5"><div class="d-flex justify-content-between align-items-center mb-3"><h2 class="h4 mb-0">Coming up</h2><a href="/tasks" class="small">All tasks</a></div><div class="surface-card p-0" id="taskPreview"><div class="p-4 text-secondary">Loading tasks…</div></div></section></div>
+</main>
+<script src="/js/dashboard.js"></script>
+<%- include('../partials/footer') %>
